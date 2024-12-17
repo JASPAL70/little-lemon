@@ -1,21 +1,42 @@
 import React from 'react';
-import Button from './Button';
-import Food from '../assets/restaurant-food.jpg'
+import Chef from '../assets/restaurant chef B.jpg';
+import { FaUtensils, FaHistory, FaLeaf } from 'react-icons/fa';
+import './About.css'; // Import the CSS file
 
 function About() {
   return (
     <div className="about-container">
+      <div className="about-image">
+        <img src={Chef} alt="Chef Cooking" />
+      </div>
       <div className="about-text-container">
         <h1>About Little Lemon</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed eros sem. Pellentesque congue varius enim, a maximus sapien congue vitae. Proin aliquam, massa ac scelerisque sollicitudin, ligula est tristique arcu, ac luctus turpis leo et orci. Pellentesque venenatis ac urna et sollicitudin. Aliquam quis sapien hendrerit, interdum neque id, sagittis dolor. Etiam facilisis risus ac lorem mollis, at ullamcorper mauris consequat. Nunc quam lorem, consectetur aliquam convallis nec, fermentum a dui. Aliquam auctor et lorem in dictum.</p>
-        <p>Integer semper mauris arcu, et egestas elit cursus a. Phasellus vitae metus felis. Etiam in luctus sem. Maecenas nec vehicula quam, sit amet ultricies felis. Vestibulum sed egestas ipsum. Morbi eu diam malesuada justo mattis ornare vitae vel odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet fermentum urna, convallis rutrum arcu porttitor auctor. Morbi aliquet aliquet mi, quis tincidunt urna sodales non. Nulla non augue diam. Maecenas sit amet est dolor. Aliquam erat volutpat. Cras dignissim molestie magna, convallis ultrices arcu tempor nec. Cras euismod tellus et libero placerat tempus.</p>
-        <p>Duis maximus magna tristique, pulvinar nisl quis, accumsan orci. Morbi suscipit pulvinar risus a posuere. Quisque sagittis mi ac fringilla condimentum. Nunc quis libero sagittis, viverra erat id, pharetra dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut odio posuere, sagittis neque a, aliquet eros. Nulla laoreet arcu ligula, at mollis urna tempus eget. Cras magna ante, ornare nec velit ac, egestas sollicitudin ligula. Suspendisse a dictum magna. Praesent sed nisl lorem. Duis tincidunt condimentum eros, quis tristique augue malesuada nec. Ut vitae feugiat diam. Quisque pretium magna eu lacinia ultrices.</p>
-      </div>
-      <div>
-        <img src={Food} alt="Restaurant Food"/>
+        <div className="about-icons">
+          <div className="icon animated-box">
+            <FaUtensils />
+            <p>Delicious Cuisine</p>
+          </div>
+          <div className="icon animated-box">
+            <FaHistory />
+            <p>Established in 2024</p>
+          </div>
+          <div className="icon animated-box">
+            <FaLeaf />
+            <p>Fresh Ingredients</p>
+          </div>
+        </div>
+        <p>
+          Welcome to Little Lemon, where the flavors of Italy come alive in every bite. Established in 2024, we have been dedicated to serving authentic Italian cuisine crafted with love and the freshest ingredients. Our cozy restaurant offers a warm and inviting atmosphere, perfect for family dinners, romantic dates, and special occasions.
+        </p>
+        <p>
+          At Little Lemon, we believe in the magic of good food and the joy it brings. Our menu features a wide variety of dishes, from classic pasta and wood-fired pizzas to delectable desserts. Each dish is prepared with utmost care by our passionate chefs who bring traditional recipes to life.
+        </p>
+        <p>
+          We are committed to using fresh, locally-sourced ingredients to ensure the highest quality in every meal. Whether you are here for a quick bite or a leisurely dinner, our goal is to provide an unforgettable dining experience. Come join us and taste the difference at Little Lemon!
+        </p>
       </div>
     </div>
-  )
+  );
 }
 
 export default About;

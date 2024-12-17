@@ -1,0 +1,75 @@
+.booking-container {
+    background-color: #f8f8f8; /* Light background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .booking-container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for heading */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    gap: 15px; /* Space between form elements */
+  }
+  
+  label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333; /* Darker color for labels */
+  }
+  
+  input[type="date"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333; /* Darker color for text */
+    background-color: #fff; /* White background for inputs */
+  }
+  
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .error {
+    color: #ff6347; /* Tomato red color for errors */
+    font-size: 0.9em;
+    margin-top: -10px; /* Align error message */
+  }
+  
+  button {
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center the button */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  button:disabled {
+    background-color: #ddd; /* Grey background when disabled */
+    cursor: not-allowed;
+  }
+  

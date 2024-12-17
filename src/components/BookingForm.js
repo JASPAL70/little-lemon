@@ -1,13 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './BookingForm.css'; // Import the CSS file
 
 function BookingForm(props) {
   const { date, time, guests, occasion, state } = props.data;
   const { setDate, setTime, setGuests, setOccasion, dispatch } = props.functions;
 
-  const [dateError, setDateError] = useState('');
-  const [timeError, setTimeError] = useState('');
   const [guestsError, setGuestsError] = useState('');
-  const [occasionError, setOccasionError] = useState('');
   const [buttonDisabled, setButtonDisabled] = useState(false);
 
   const handleDateChange = (e) => {
@@ -20,7 +18,7 @@ function BookingForm(props) {
   }
 
   const handleGuestsChange = (e) => {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       setGuestsError("Must input number of guests.");
       setButtonDisabled(true);
     } else if (e.target.value < 1) {
@@ -52,9 +50,6 @@ function BookingForm(props) {
           value={date}
           onChange={handleDateChange}
         />
-        {dateError &&
-          <div className="error">{dateError}</div>
-        }
 
         <label htmlFor="res-time">Choose time</label>
         <select
@@ -66,9 +61,6 @@ function BookingForm(props) {
             return <option key={t}>{t}</option>
           })}
         </select>
-        {timeError &&
-          <div class="error">{timeError}</div>
-        }
 
         <label htmlFor="guests">Number of guests</label>
         <input
@@ -78,7 +70,7 @@ function BookingForm(props) {
           onChange={handleGuestsChange}
         />
         {guestsError &&
-          <div class="error">{guestsError}</div>
+          <div className="error">{guestsError}</div>
         }
 
         <label htmlFor="occasion">Occasion</label>
@@ -90,9 +82,6 @@ function BookingForm(props) {
             <option>Birthday</option>
             <option>Anniversary</option>
         </select>
-        {occasionError &&
-          <div class="error">{occasionError}</div>
-        }
 
         <button
           type="submit"

@@ -1,16 +1,17 @@
 import React from 'react';
+import './SpecialsCard.css'; // Import the CSS file
 
-function SpecialsCard(props) {
+const SpecialsCard = ({ imageUrl, dish, description, price, onBuy }) => {
   return (
     <div className="specials-card">
-        <img
-          src={require(`../../assets/${props.imageUrl}`)}
-          alt={props.imageUrl}
-        />
-        <h2>{props.dish}</h2>
-        <p>{props.description}</p>
+      <img src={imageUrl} alt={dish} className="specials-card-image" />
+      <h2 className="specials-card-dish">{dish}</h2>
+      <p className="specials-card-description">{description}</p>
+      <span className="specials-card-price">{price}</span>
+      <button onClick={onBuy} className="buy-button">order</button>
     </div>
-  )
-}
+  );
+};
 
 export default SpecialsCard;
+

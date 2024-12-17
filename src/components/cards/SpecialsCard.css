@@ -1,0 +1,52 @@
+.specials-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.specials-card-image {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  border-radius: 8px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.specials-card-dish {
+  font-size: 1.4em;
+  margin-bottom: 10px; /* Space between dish name and description */
+}
+
+.specials-card-description {
+  font-size: 1em;
+  color: #666; /* Grey color for description */
+  margin-bottom: 15px; /* Space between description and price */
+}
+
+.specials-card-price {
+  font-size: 1.2em;
+  color: #888; /* Grey color for price */
+  margin-bottom: 20px; /* Added space between price and button */
+  display: block; /* Ensure it takes up full width */
+}
+
+.buy-button {
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Ensure space above the button */
+}
+
+.buy-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+  
+  

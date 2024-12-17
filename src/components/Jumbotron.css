@@ -1,0 +1,66 @@
+.jumbotron-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; /* Increased padding */
+    background-color: #f8f8f8;
+    border-radius: 29px; /* Updated border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Ensure full-width */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .jumbotron-content {
+    max-width: 50%;
+    flex: 1; /* Ensure it takes up available space */
+  }
+  
+  .jumbotron-content h1 {
+    font-size: 2.5em;
+    margin-top: 20px; /* Add top margin */
+    margin-bottom: 10px;
+  }
+  
+  .jumbotron-details {
+    background-color: #fff;
+    padding: 22px; /* Updated padding */
+    border-radius: 29px; /* Updated border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .jumbotron-details p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .reserve-button {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reserve-button:hover {
+    background-color: #e5533d; /* Darker tomato color */
+  }
+  
+  .jumbotron-image {
+    max-width: 40%;
+    flex: 1; /* Ensure it takes up available space */
+  }
+  
+  .jumbotron-image img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  

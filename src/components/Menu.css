@@ -1,0 +1,70 @@
+.menu-container {
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background for contrast */
+  text-align: center;
+}
+
+.menu-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four items in one row */
+  gap: 20px; /* Space between items */
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: #fff;
+  padding: 20px; /* Increase padding for a larger container */
+  border: 1px solid #ddd;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+}
+
+.menu-item-image-container {
+  margin-bottom: 10px; /* Space between image container and details */
+}
+
+.menu-item-image {
+  width: 262px; /* Increased width */
+  height: 273px; /* Increased height */
+  border-radius: 12px; /* Rounded corners for images */
+}
+
+.menu-item-details {
+  display: flex;
+  flex-direction: column; /* Display details vertically */
+  align-items: center; /* Center details horizontally */
+}
+
+.menu-item-name {
+  font-size: 1.3em; /* Slightly larger font */
+  margin-bottom: 5px; /* Space between name and price */
+}
+
+.menu-item-price {
+  font-size: 1.2em;
+  color: #888; /* Grey color for price */
+  margin-bottom: 20px; /* Increase space between price and button */
+}
+
+.buy-button {
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

@@ -1,7 +1,6 @@
 import React from 'react'
 import Jumbotron from '../components/Jumbotron';
 import Specials from '../components/Specials';
-import About from '../components/About';
 import Testimonials from '../components/Testimonials';
 
 function HomePage() {
@@ -10,7 +9,6 @@ function HomePage() {
       <Jumbotron />
       <Specials />
       <Testimonials />
-      <About />
       
     </>
   )

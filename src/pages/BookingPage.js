@@ -3,7 +3,6 @@ import BookingForm from '../components/BookingForm';
 import { useNavigate } from 'react-router-dom';
 import { fetchAPI, submitAPI } from '../functions/utils';
 
-
 function BookingPage() {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -11,12 +10,12 @@ function BookingPage() {
   const [occasion, setOccasion] = useState("Birthday");
 
   const navigate = useNavigate();
-  
+
   const initializeTimes = (date) => {
-    const dateObj = new Date(date)
+    const dateObj = new Date(date);
     return fetchAPI(dateObj);
   }
-  
+
   const updateTimes = (times) => {
     return { availableTimes: times };
   }
@@ -26,6 +25,12 @@ function BookingPage() {
   }
 
   const [state, dispatch] = useReducer(reducer, { availableTimes: [] });
+
+  useEffect(() => {
+    if (date) {
+      dispatch({ date });
+    }
+  }, [date]);
 
   const submitForm = (formData) => {
     if (submitAPI(formData)) {
@@ -37,13 +42,14 @@ function BookingPage() {
 
   return (
     <div>
+      <h1>Book a Table</h1>
       <BookingForm
         data={{ date, time, guests, occasion, state }}
         functions={{ setDate, setTime, setGuests, setOccasion, dispatch }}
         onSubmit={submitForm}
       />
     </div>
-  )
+  );
 }
 
 export default BookingPage;
