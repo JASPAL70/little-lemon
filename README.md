@@ -23,8 +23,7 @@ To set up this project locally, follow these steps:
    ```bash
    git clone  https://github.com/JASPAL70/little-lemon
 2.  Start the development server
-
-3.  
+ 
     npm start
 
 
