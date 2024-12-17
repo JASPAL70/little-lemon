@@ -21,7 +21,7 @@ To set up this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone
+   git clone  https://github.com/JASPAL70/little-lemon
 2.  Start the development server
     npm start
 
